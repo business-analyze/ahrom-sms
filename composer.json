@@ -1,4 +1,6 @@
 {
+    "name": "ahrom/ahrom-sms",
+    "description": "An Sms Handler For work with sms.ir & kavehnegar",
     "type": "library",
     "require": {
         "php": "^8.2|^8.1",
