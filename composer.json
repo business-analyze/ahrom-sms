@@ -11,5 +11,11 @@
             "Ahrom\\AhromSms\\App\\": "src/",
             "Ahrom\\AhromSms\\": ""
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "EmadMirzaieR",
+            "email": "grogu.power@gmail.com"
+        }
+    ]
 }
