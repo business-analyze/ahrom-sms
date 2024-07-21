@@ -2,6 +2,7 @@
     "name": "ahrom/ahrom-sms",
     "description": "An Sms Handler For work with sms.ir & kavehnegar",
     "type": "library",
+    "license": "MIT",
     "require": {
         "php": "^8.2|^8.1",
         "laravel/framework": "^7.0|^8.0|^9.0|^10.0|^11.0",
@@ -19,5 +20,6 @@
             "name": "EmadMirzaieR",
             "email": "grogu.power@gmail.com"
         }
-    ]
+    ],
+    "minimum-stablity": "dev"
 }
