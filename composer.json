@@ -3,6 +3,7 @@
     "description": "An Sms Handler For work with sms.ir & kavehnegar",
     "type": "library",
     "license": "MIT",
+    "version": "0.8.9",
     "require": {
         "php": "^8.2|^8.1",
         "laravel/framework": "^10",
