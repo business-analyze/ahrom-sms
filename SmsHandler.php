@@ -28,4 +28,17 @@ class SmsHandler
 
         return $response;
     }
+    
+    public function sendSmsByTemplate(SmsParameters $params)
+    {
+        $message = (new SmsMessage())
+            ->driver(Drivers::SMSIR)
+            ->setTo($params->to)
+            ->setTemplate($params->template)
+            ->setTokens($params->tokens);
+
+        $response = $this->ahromSms->send($message);
+
+        return $response;
+    }
 }
