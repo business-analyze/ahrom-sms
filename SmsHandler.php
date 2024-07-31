@@ -3,6 +3,7 @@
 namespace Ahrom\AhromSms;
 
 use Ahrom\AhromSms\App\AhromSms;
+use Ahrom\AhromSms\App\Drivers\SmsIr\SmsIrMessage;
 use Ahrom\AhromSms\App\SmsMessage;
 use Ahrom\AhromSms\App\Enums\Drivers;
 use Ahrom\AhromSms\SmsParameters;
@@ -29,13 +30,13 @@ class SmsHandler
         return $response;
     }
     
-    public function sendSmsByTemplate(SmsParameters $params)
+    public function sendSmsBulkSmsIr(SmsIrMessage $params)
     {
         $message = (new SmsMessage())
             ->driver(Drivers::SMSIR)
-            ->setTo($params->to)
-            ->setTemplate($params->template)
-            ->setTokens($params->tokens);
+            ->setTo($params->getTo())
+            ->setContent($params->getContent())
+            ->setFrom($params->getFrom());
 
         $response = $this->ahromSms->send($message);
 
